@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="399.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="com.tqd.jfxenglishapp.PrimaryController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="291.0" minWidth="10.0" prefWidth="87.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="513.0" minWidth="10.0" prefWidth="513.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Text opacity="0.94" strokeWidth="30.0" style="-fx-font-size: 30; -fx-font-family: Arial; -fx-font-weight: bold;" text="Chương Trình học Tiếng Anh" textAlignment="CENTER" wrappingWidth="592.6630859375" GridPane.columnSpan="2" />
+      <RadioButton fx:id="rdoB" mnemonicParsing="false" text="B" GridPane.rowIndex="3">
+         <toggleGroup>
+            <ToggleGroup fx:id="chokkk" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rdoC" mnemonicParsing="false" text="C" toggleGroup="$chokkk" GridPane.rowIndex="4" />
+      <RadioButton fx:id="rdoD" mnemonicParsing="false" text="D" toggleGroup="$chokkk" GridPane.rowIndex="5" />
+      <Button mnemonicParsing="false" onAction="#nextHandel" text="Next" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+      <Text fx:id="txtA" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Text fx:id="txtB" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Text fx:id="txtC" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <Text fx:id="txtD" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+      <Text fx:id="content" strokeType="OUTSIDE" strokeWidth="0.0" text="Noi Dung Cau hoi" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Button mnemonicParsing="false" onAction="#checkHandler" text="Check" GridPane.rowIndex="6" />
+      <RadioButton fx:id="rdoA" mnemonicParsing="false" text="A" toggleGroup="$chokkk" GridPane.rowIndex="2" />
+   </children>
+</GridPane>

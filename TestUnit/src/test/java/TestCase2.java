@@ -62,13 +62,4 @@ public class TestCase2 {
         Radix r = new Radix(2);
         Assertions.assertEquals(expected, r.ConvertDecimalToAnother(n));
     }
-
-    @Test
-    @DisplayName("Kiểm tra ném ngoại lệ radix < 0")
-    @CsvSource({"-1,Incorrect Value", "0,Incorrect Value", "1,1", "2, false"})
-    public void test1(int n) {
-       Radix r = new Radix(2);
-       Assertions.assertEquals(expected, r.ConvertDecimalToAnother(n));
-    }
-
 }

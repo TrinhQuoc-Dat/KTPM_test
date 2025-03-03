@@ -43,7 +43,6 @@ public class Radix {
             }
             n /= radix;
         }
-        
-        return String.join("", result);
+        return new StringBuilder(String.join("", result)).reverse().toString() ;
     }
 }
